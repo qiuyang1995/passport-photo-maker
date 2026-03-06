@@ -253,16 +253,16 @@ export const siteMessages: Record<Locale, SiteMessageDictionary> = {
       ],
     },
     toolPage: {
-      eyebrow: "Tool scaffold",
-      title: "The editor route exists. The image workflow comes next.",
+      eyebrow: "Passport photo editor",
+      title: "Upload, adjust, and export your passport photo in-browser.",
       description:
-        "Phase 0 deliberately stops short of image manipulation. What you see here is the stable shell that Phase 2 can fill with upload, transform, and export logic without another route or layout rewrite.",
-      canvasEyebrow: "Editor canvas reserved",
-      canvasTitle: "Upload, crop, and export will land here in Phase 2.",
+        "Use local image processing to generate a digital JPG and a 4x6 print sheet. Your photo stays in your browser and is never uploaded by this tool.",
+      canvasEyebrow: "Editor canvas",
+      canvasTitle: "Preview with drag and zoom controls.",
       canvasDescription:
-        "The structure is ready for pointer interactions, sliders, and a Canvas-backed export pipeline.",
-      exportEyebrow: "Export presets",
-      rulesEyebrow: "Ground rules",
+        "Upload your image, drag to position the face, then export digital and print-ready outputs.",
+      exportEyebrow: "Export",
+      rulesEyebrow: "Important notes",
       rules: [
         "Photos stay local to the browser.",
         "No claim of official acceptance is made.",
@@ -432,16 +432,16 @@ export const siteMessages: Record<Locale, SiteMessageDictionary> = {
       ],
     },
     toolPage: {
-      eyebrow: "工具骨架",
-      title: "编辑器路由已经就位，下一步才是图片工作流本身。",
+      eyebrow: "证件照编辑器",
+      title: "在浏览器中上传、调整并导出你的护照照片。",
       description:
-        "Phase 0 有意停在结构层，不提前写图片编辑逻辑。现在这个页面的价值，是保证 Phase 2 接入上传、裁切和导出时不需要再改整体框架。",
-      canvasEyebrow: "编辑器画布预留区",
-      canvasTitle: "上传、裁切与导出会在 Phase 2 落到这里。",
+        "使用本地图片处理生成数字版 JPG 与 4x6 打印模板。照片仅在浏览器内处理，不会被工具上传。",
+      canvasEyebrow: "编辑器预览区",
+      canvasTitle: "拖拽与缩放实时预览。",
       canvasDescription:
-        "这个结构已经为拖拽、缩放滑块和 Canvas 导出链路预留好了位置。",
-      exportEyebrow: "导出预设",
-      rulesEyebrow: "基础规则",
+        "上传图片后可拖拽调整脸部位置，再导出数字版与打印版结果。",
+      exportEyebrow: "导出",
+      rulesEyebrow: "使用说明",
       rules: [
         "照片只保留在本地浏览器中。",
         "不会声称官方一定通过。",
