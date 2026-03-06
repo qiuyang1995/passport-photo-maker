@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f3ecdf;
+  --foreground: #13243f;
+  --surface: rgba(255, 250, 242, 0.86);
+  --muted: #5d6a7f;
+  --line: rgba(19, 36, 63, 0.14);
+  --accent: #c84d2f;
+  --accent-soft: #f1c6b8;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --font-sans: var(--font-work-sans);
+  --font-display: var(--font-fraunces);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-work-sans), sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+::selection {
+  background: rgba(200, 77, 47, 0.18);
+}
+
+.site-aura {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(200, 77, 47, 0.14),
+      transparent 34%
+    ),
+    radial-gradient(circle at 82% 18%, rgba(19, 36, 63, 0.12), transparent 28%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0));
+  pointer-events: none;
+}
+
+.site-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(19, 36, 63, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(19, 36, 63, 0.05) 1px, transparent 1px);
+  background-size: 28px 28px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.2), transparent 72%);
+  pointer-events: none;
+}
