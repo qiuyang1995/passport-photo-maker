@@ -12,7 +12,10 @@ type ToolPageProps = {
 
 export async function generateMetadata({ params }: ToolPageProps) {
   const { locale } = await params;
-  const title = locale === "zh" ? "护照照片工具" : "Passport Photo Maker Tool";
+  const title =
+    locale === "zh"
+      ? "在线护照照片工具：导出数字版与 4x6 打印模板"
+      : "Passport Photo Maker Tool for Digital JPG and 4x6 Print Template";
 
   return createPageMetadata({
     title,

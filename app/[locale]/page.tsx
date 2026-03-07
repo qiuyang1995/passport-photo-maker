@@ -3,6 +3,7 @@ import { AdSlot } from "@/components/ads/ad-slot";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { getContentPageList } from "@/features/content/content.config";
 import { getFaqItems } from "@/features/content/faq.config";
+import { adSlots } from "@/lib/ads/slots";
 import { type Locale } from "@/lib/i18n/config";
 import { getLocalizedPath } from "@/lib/i18n/config";
 import { getSiteMessages } from "@/lib/i18n/messages";
@@ -19,7 +20,10 @@ export async function generateMetadata({ params }: HomePageProps) {
   const messages = getSiteMessages(locale);
 
   return createPageMetadata({
-    title: locale === "zh" ? "首页" : "Home",
+    title:
+      locale === "zh"
+        ? "在线护照照片制作工具与美国规格指南"
+        : "Passport Photo Maker for U.S. Digital and 4x6 Print Files",
     description: messages.home.heroDescription,
     path: "/",
     locale,
@@ -87,7 +91,11 @@ export default async function LocalizedHomePage({ params }: HomePageProps) {
         </aside>
       </section>
 
-      <AdSlot locale={locale} label={messages.home.adLabel} />
+      <AdSlot
+        locale={locale}
+        label={messages.home.adLabel}
+        slotId={adSlots.contentInline}
+      />
 
       <section className="grid gap-6 lg:grid-cols-[0.7fr_1.3fr]">
         <SectionHeading
@@ -171,6 +179,12 @@ export default async function LocalizedHomePage({ params }: HomePageProps) {
           </div>
         </div>
       </section>
+
+      <AdSlot
+        locale={locale}
+        label={locale === "zh" ? "首页内容广告位" : "Home content ad slot"}
+        slotId={adSlots.contentFooter}
+      />
 
       <section className="grid gap-6 lg:grid-cols-[0.7fr_1.3fr]">
         <SectionHeading

@@ -15,7 +15,10 @@ export async function generateMetadata({ params }: TermsPageProps) {
   const messages = getSiteMessages(locale);
 
   return createPageMetadata({
-    title: locale === "zh" ? "条款" : "Terms",
+    title:
+      locale === "zh"
+        ? "使用条款：护照照片工具免责声明"
+        : "Terms of Use for Passport Photo Maker",
     description: messages.termsPage.description,
     path: "/terms",
     locale,

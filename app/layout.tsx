@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Fraunces, Work_Sans } from "next/font/google";
+import { AnalyticsScripts } from "@/components/analytics/analytics-scripts";
 import { siteConfig } from "@/lib/constants/site";
 import "./globals.css";
 
@@ -53,6 +54,7 @@ export default function RootLayout({
       <body
         className={`${workSans.variable} ${fraunces.variable} bg-background text-foreground antialiased`}
       >
+        <AnalyticsScripts />
         <div className="relative min-h-screen overflow-hidden">
           <div className="site-aura" aria-hidden="true" />
           <div className="site-grid" aria-hidden="true" />

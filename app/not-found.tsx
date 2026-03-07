@@ -5,11 +5,11 @@ export default function NotFound() {
     <div className="mx-auto flex min-h-[60vh] w-full max-w-4xl flex-col items-start justify-center gap-6 px-6 py-16 sm:px-8 lg:px-10">
       <p className="text-muted text-sm tracking-[0.24em] uppercase">404</p>
       <h1 className="font-display text-foreground text-5xl leading-[0.96] sm:text-6xl">
-        This route is not part of the passport-photo map yet.
+        This page is not available.
       </h1>
       <p className="text-muted max-w-2xl text-lg leading-8">
-        Use the main navigation to return to the project scaffold, the tool
-        route, or one of the seeded content pages.
+        Use the main navigation to return to the tool, FAQ, or one of the
+        localized guidance pages.
       </p>
       <Link
         href="/"

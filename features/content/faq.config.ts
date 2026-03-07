@@ -37,16 +37,16 @@ const faqItemsByLocale: Record<Locale, FaqItem[]> = {
       category: "usage",
     },
     {
-      question: "What is included in the current Phase 1 site?",
+      question: "What can I do on this site right now?",
       answer:
-        "Phase 1 focuses on the content foundation: bilingual routes, stronger homepage messaging, FAQ coverage, legal pages, and SEO-ready content structures around the core tool path.",
-      category: "roadmap",
+        "You can upload a JPG or PNG, adjust the square crop, export a digital JPG, and download a 4x6 print template, then use the guidance pages to review the surrounding requirements.",
+      category: "product",
     },
     {
-      question: "When does the actual image editor arrive?",
+      question: "What does the tool not do automatically?",
       answer:
-        "The route and feature directories are already reserved for it. Upload, transform, and export logic are planned for the next development phase.",
-      category: "roadmap",
+        "It does not remove the background, guarantee official acceptance, or verify every lighting, recency, and expression rule for you.",
+      category: "compliance",
     },
     {
       question: "Should I still check official guidance before submission?",
@@ -87,16 +87,16 @@ const faqItemsByLocale: Record<Locale, FaqItem[]> = {
       category: "使用",
     },
     {
-      question: "当前 Phase 1 已经包含哪些内容？",
+      question: "这个站点现在已经能做什么？",
       answer:
-        "Phase 1 主要完成内容站底座，包括中英文页面、首页强化、FAQ、隐私与条款页，以及围绕工具页的 SEO 内容结构。",
-      category: "路线图",
+        "你现在可以上传 JPG 或 PNG，调整正方形裁切，导出数字版 JPG，或下载 4x6 打印模板，然后结合说明页继续核对相关要求。",
+      category: "产品",
     },
     {
-      question: "真正的图片编辑器什么时候开始做？",
+      question: "这个工具不会自动帮我做什么？",
       answer:
-        "当前路由和 feature 目录已经为它预留好了位置，上传、裁切和导出逻辑会在下一阶段进入实现。",
-      category: "路线图",
+        "它不会自动抠图、自动换白底、保证官方通过，也不会替你判断所有光线、近照或表情要求。",
+      category: "合规",
     },
     {
       question: "提交前还需要去看官方要求吗？",

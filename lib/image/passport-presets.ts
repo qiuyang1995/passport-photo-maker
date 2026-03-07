@@ -8,6 +8,6 @@ export const digitalExportPreset = {
 export const printExportPreset = {
   id: "print-4x6",
   fileName: "passport-photo-print-4x6.jpg",
-  width: 1200,
-  height: 1800,
+  width: 1800,
+  height: 2700,
 } as const;

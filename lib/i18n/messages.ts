@@ -115,9 +115,9 @@ export const siteMessages: Record<Locale, SiteMessageDictionary> = {
       footer: {
         eyebrow: "Passport Photo Maker",
         title:
-          "Built for an SEO-led utility site where the tool stays simple and the content does the scaling.",
+          "A practical passport photo site should make privacy, requirements, and export choices obvious at a glance.",
         description:
-          "This multilingual foundation keeps the future tool, content pages, and compliance copy in one codebase without introducing a backend too early.",
+          "Use the tool for local-only editing, then use the guidance pages to double-check dimensions, print settings, and compliance boundaries before submission.",
         navHeading: "Navigate",
         contentHeading: "Content routes",
         languageHeading: "Languages",
@@ -138,32 +138,32 @@ export const siteMessages: Record<Locale, SiteMessageDictionary> = {
       reservedAdSlot: "Reserved ad slot",
     },
     home: {
-      phaseBadge: "Phase 0 ready",
+      phaseBadge: "Local-only editing",
       heroTitle:
-        "Build a credible passport-photo tool before scaling the content engine.",
+        "Create a U.S. passport photo locally, then export a digital JPG or a 4x6 print template.",
       heroDescription:
-        "The project skeleton now reflects the PRD and TDD direction: locale-aware routes, static-first content architecture, SEO plumbing, and a clean structure for browser-side image editing.",
-      primaryCta: "Open tool scaffold",
-      secondaryCta: "Review content routes",
-      foundationEyebrow: "Foundation board",
-      routeMapEyebrow: "Route map",
+        "Upload a JPG or PNG, adjust the crop in your browser, and download a digital file or print-ready layout without sending the original image to a server.",
+      primaryCta: "Make my photo",
+      secondaryCta: "Read U.S. requirements",
+      foundationEyebrow: "Why people trust this workflow",
+      routeMapEyebrow: "Helpful guidance",
       routeMapTitle:
-        "The information architecture is already encoded in the app router.",
+        "Start with the tool, then use the right guide for the next question.",
       routeMapDescription:
-        "The locale segment keeps marketing, content, and tool flows aligned across English and Chinese without duplicating framework work later.",
-      executionEyebrow: "Execution order",
-      executionTitle: "Phase 0 keeps the project honest.",
+        "Each content route covers one decision clearly: official-style requirements, 2x2 sizing, print templates, or digital submission tips.",
+      executionEyebrow: "Simple workflow",
+      executionTitle: "The fastest path is upload, adjust, export.",
       executionDescription:
-        "The stack is intentionally small: Next.js, TypeScript, Tailwind, and browser-native imaging primitives.",
-      faqEyebrow: "FAQ preview",
-      faqTitle: "Support content starts with structured data, not ad hoc copy.",
+        "The product keeps the editing flow short while the surrounding content pages explain what the tool can and cannot check for you.",
+      faqEyebrow: "Common questions",
+      faqTitle: "Clear answers reduce mistakes before submission.",
       faqDescription:
-        "The FAQ route already has seed content and can expand into schema-backed search pages in both languages during Phase 1.",
+        "Read the most common questions about privacy, digital versus print exports, and why official rules still matter after you download the file.",
       promiseEyebrow: "Why this site",
       promiseTitle:
-        "A utility site only works when trust, privacy, and clarity are obvious.",
+        "A useful passport photo site needs trust, clarity, and practical next steps.",
       promiseDescription:
-        "The homepage should quickly tell users what the site does, what it does not do, and why the experience is structured around guidance plus local processing.",
+        "The homepage should show the core promise immediately: local-only processing, clear export options, and plain-language guidance for the rules around your photo.",
       promiseCards: [
         {
           title: "Local-first handling",
@@ -188,56 +188,56 @@ export const siteMessages: Record<Locale, SiteMessageDictionary> = {
       phaseZeroChecklist: [
         {
           stage: "01",
-          title: "Project shell",
+          title: "Private by default",
           description:
-            "Next.js, TypeScript, Tailwind, linting, formatting, and unit test hooks are wired up for immediate development.",
+            "The core editing flow runs in the browser so users can crop and export without uploading the original image to this tool.",
         },
         {
           stage: "02",
-          title: "Content foundation",
+          title: "Clear requirement guides",
           description:
-            "Content routes and route data already live behind shared locale config, ready for Phase 1 copywriting and SEO refinement.",
+            "Dedicated pages explain U.S. rules, 2x2 sizing, print templates, and digital submission expectations in plain language.",
         },
         {
           stage: "03",
-          title: "Tool reservation",
+          title: "Two export outcomes",
           description:
-            "The tool route is scaffolded with feature placeholders so the editor can land without another structural refactor.",
+            "Use the digital JPG for online forms or choose the 4x6 print template when you need multiple 2x2 copies on one sheet.",
         },
       ],
       toolSteps: [
         {
-          title: "Build static marketing routes first",
+          title: "Upload a JPG or PNG",
           description:
-            "The app router is split for marketing, content, and tool paths so Phase 1 can focus on content quality instead of infrastructure.",
+            "Choose a recent photo with a plain background and let the browser load it locally for editing.",
         },
         {
-          title: "Keep image processing local",
+          title: "Drag and zoom until the face looks right",
           description:
-            "The architecture reserves browser-only image work for the editor while SEO pages stay server-rendered and cache-friendly.",
+            "Use the square crop and framing guide to keep the face centered and the full crop covered.",
         },
         {
-          title: "Add monetization without harming task flow",
+          title: "Download the right export type",
           description:
-            "Ad slots are encapsulated and optional, which keeps the future editing flow clean and avoids layout instability.",
+            "Pick a digital JPG for online submission or a 4x6 print template for printing several 2x2 photos together.",
         },
       ],
     },
     faqPage: {
       eyebrow: "FAQ",
-      title: "Practical answers for the first release.",
+      title: "Practical answers about privacy, cropping, and export choices.",
       description:
-        "This route is already wired into the project skeleton and can expand into schema-backed SEO content during Phase 1.",
+        "Use this page to understand how the tool works, what it can help with, and what you still need to verify against the latest official rules.",
     },
     privacyPage: {
       eyebrow: "Privacy",
-      title: "Privacy starts with local image handling.",
+      title: "Privacy starts with keeping the photo in your browser.",
       description:
-        "This is Phase 0 placeholder copy, but it already encodes the core promise from the product documents: photos should stay in the browser unless the product direction changes explicitly.",
+        "The core promise of this site is simple: your photo is processed locally for editing and export, and the tool is not designed to upload the original image to an application server.",
       points: [
-        "The planned editor processes photos in the local browser rather than sending originals to an application server.",
-        "Analytics and advertising can be added later, but they should not include the uploaded image data itself.",
-        "This page exists in Phase 0 so the future product has a visible trust surface from the beginning.",
+        "The editor processes JPG and PNG files in the browser for preview, framing, and export.",
+        "Analytics and advertising may measure page usage, but they should never include the uploaded image content itself.",
+        "You should refresh or close the page when you are done if you want to clear the local editing session immediately.",
       ],
     },
     termsPage: {
@@ -249,7 +249,7 @@ export const siteMessages: Record<Locale, SiteMessageDictionary> = {
       points: [
         "The tool is intended to help users prepare photos, not to provide official approval or legal guarantees.",
         "Users remain responsible for checking the latest government guidance before submitting a photo.",
-        "This route is present in the scaffold so compliance language is part of the product from the start instead of an afterthought.",
+        "A successful export does not mean the image will automatically meet every official background, lighting, or recency requirement.",
       ],
     },
     toolPage: {
@@ -266,23 +266,23 @@ export const siteMessages: Record<Locale, SiteMessageDictionary> = {
       rules: [
         "Photos stay local to the browser.",
         "No claim of official acceptance is made.",
-        "Ads will eventually sit below the export area, not inside the editor.",
+        "Ads stay outside the crop editor so they do not block the task flow.",
       ],
       modules: [
         {
           title: "Upload panel",
           description:
-            "Will handle JPG and PNG input, local decoding, validation, and object URL lifecycle management.",
+            "Accepts JPG and PNG files, validates them locally, and prepares them for browser-side editing.",
         },
         {
           title: "Photo stage",
           description:
-            "Reserved for the square crop surface, head-safe overlay, and drag interactions defined in the TDD.",
+            "Shows the square crop, head framing guide, and drag interactions used to position the face.",
         },
         {
           title: "Export panel",
           description:
-            "Will expose digital and print presets after the editor state and Canvas rendering pipeline are added.",
+            "Lets users download a digital JPG or a 4x6 print layout after they finish adjusting the crop.",
         },
       ],
     },
@@ -298,9 +298,9 @@ export const siteMessages: Record<Locale, SiteMessageDictionary> = {
       },
       footer: {
         eyebrow: "Passport Photo Maker",
-        title: "这是一个以 SEO 驱动的工具站，工具保持轻量，内容负责放大流量。",
+        title: "一个实用的护照照片站点，应该让隐私承诺、规格说明和导出选择一眼就看明白。",
         description:
-          "这套多语言骨架把未来的工具页、内容页和合规文案放在同一个代码库里，同时避免过早引入后端。",
+          "先用工具完成本地裁切和导出，再用说明页面复核尺寸、打印设置和免责声明，整个路径都应该足够清楚。",
         navHeading: "站点导航",
         contentHeading: "内容页面",
         languageHeading: "语言切换",
@@ -321,29 +321,29 @@ export const siteMessages: Record<Locale, SiteMessageDictionary> = {
       reservedAdSlot: "广告位预留",
     },
     home: {
-      phaseBadge: "Phase 0 已完成",
-      heroTitle: "先把可信的证件照工具站骨架搭好，再去放大内容流量。",
+      phaseBadge: "仅本地处理",
+      heroTitle: "在浏览器里制作美国护照照片，并导出数字版或 4x6 打印模板。",
       heroDescription:
-        "当前项目骨架已经对齐 PRD 和 TDD：支持 locale 的路由、静态优先的内容结构、SEO 基础能力，以及后续浏览器端图片编辑的扩展位。",
-      primaryCta: "查看工具页骨架",
-      secondaryCta: "查看内容页路由",
-      foundationEyebrow: "基础看板",
-      routeMapEyebrow: "路由结构",
-      routeMapTitle: "信息架构已经落到了 App Router 里。",
+        "上传 JPG 或 PNG，在当前浏览器里完成裁切调整，然后下载数字版文件或可打印的 4x6 拼版，不需要把原图上传到服务器。",
+      primaryCta: "开始制作照片",
+      secondaryCta: "查看美国规格要求",
+      foundationEyebrow: "为什么这条流程可信",
+      routeMapEyebrow: "实用说明",
+      routeMapTitle: "先用工具，再根据问题进入对应说明页。",
       routeMapDescription:
-        "locale 分段让中文和英文的营销页、内容页和工具页共享同一套框架，后续不会因为国际化再做一次结构改造。",
-      executionEyebrow: "执行顺序",
-      executionTitle: "Phase 0 的价值，是把工程方向先锁定。",
+        "每个内容页只解决一个核心判断：美国规格、2x2 尺寸、打印模板，或数字版提交注意事项。",
+      executionEyebrow: "操作流程",
+      executionTitle: "最快的路径就是上传、调整、导出。",
       executionDescription:
-        "技术栈保持克制：Next.js、TypeScript、Tailwind，以及浏览器原生图片处理能力。",
-      faqEyebrow: "FAQ 预览",
-      faqTitle: "支持型内容先结构化，再逐步扩写。",
+        "工具页保持轻量，把编辑动作压缩到最少步骤；说明页则负责解释工具无法自动判断的规则边界。",
+      faqEyebrow: "常见问题",
+      faqTitle: "把用户最常犯错的地方提前讲清楚。",
       faqDescription:
-        "FAQ 路由已经有中英文种子内容，Phase 1 可以继续扩成带 schema 的 SEO 页面。",
+        "这里集中回答隐私、数字版和打印版区别，以及为什么下载成功后仍需对照官方规则自行复核。",
       promiseEyebrow: "站点价值",
       promiseTitle: "一个工具站要成立，前提是信任、隐私和规则边界都足够清楚。",
       promiseDescription:
-        "首页不仅要告诉用户这个站点能做什么，也要明确告诉用户不能做什么，以及为什么整个体验会围绕本地处理和规则说明展开。",
+        "首页应该马上告诉用户三件事：照片只在本地处理、导出有明确用途区分、工具不是官方审核器。",
       promiseCards: [
         {
           title: "本地优先处理",
@@ -368,56 +368,56 @@ export const siteMessages: Record<Locale, SiteMessageDictionary> = {
       phaseZeroChecklist: [
         {
           stage: "01",
-          title: "工程底座",
+          title: "默认保护隐私",
           description:
-            "Next.js、TypeScript、Tailwind、lint、format 和单测钩子已经接好，可以直接继续开发。",
+            "核心编辑流程在浏览器内完成，用户可以在不上传原图的前提下完成裁切和导出。",
         },
         {
           stage: "02",
-          title: "内容底座",
+          title: "规则说明足够清楚",
           description:
-            "内容页与路由数据已经按 locale 配置化，Phase 1 可以直接补中英文文案和 SEO 细节。",
+            "独立内容页分别解释美国规格、2x2 尺寸、打印模板和数字版提交注意事项。",
         },
         {
           stage: "03",
-          title: "工具预留",
+          title: "导出结果明确区分",
           description:
-            "工具页已经有稳定骨架，后续接入编辑器时不需要再重做路由和布局。",
+            "数字版 JPG 适合在线提交，4x6 打印模板适合一次打印多张 2x2 照片。",
         },
       ],
       toolSteps: [
         {
-          title: "先把静态页面路由搭好",
+          title: "上传 JPG 或 PNG",
           description:
-            "营销页、内容页和工具页先在路由层分清职责，Phase 1 就能专注在内容和转化上。",
+            "选择一张近期拍摄、背景尽量干净的照片，浏览器会在本地完成读取和预览。",
         },
         {
-          title: "图片处理坚持本地执行",
+          title: "拖拽和缩放调整构图",
           description:
-            "编辑器保留浏览器端图片处理能力，SEO 页面继续走静态输出和缓存友好路线。",
+            "使用正方形裁切区和头部参考框，把脸部调整到更合适的位置。",
         },
         {
-          title: "商业化不破坏核心流程",
+          title: "下载适合场景的文件",
           description:
-            "广告位通过独立组件封装，后续接入也不会污染工具主流程或引发布局抖动。",
+            "在线提交请选择数字版 JPG；需要打印时请选择 4x6 拼版模板。",
         },
       ],
     },
     faqPage: {
       eyebrow: "FAQ",
-      title: "第一版先把用户最关心的问题回答清楚。",
+      title: "围绕隐私、裁切和导出选择的实用答疑。",
       description:
-        "这个路由已经纳入项目骨架，Phase 1 可以继续扩成结构化、可收录的中英文 FAQ 页面。",
+        "如果你想确认工具能做什么、不能做什么，以及下载前后还需要注意哪些规则，这一页会更直接。",
     },
     privacyPage: {
       eyebrow: "隐私",
       title: "隐私能力的起点，是图片只在本地浏览器里处理。",
       description:
-        "这还是 Phase 0 占位文案，但它已经明确了产品最重要的信任承诺：除非产品方向显式变更，否则原始图片不会离开浏览器。",
+        "这个站点最重要的承诺很简单：照片在浏览器内完成编辑和导出，这个工具本身不以上传原图到应用服务器为前提。",
       points: [
-        "规划中的编辑器会在本地浏览器里处理照片，而不是把原图上传到应用服务器。",
-        "后续可以接入统计和广告，但不应采集或传输用户上传的图片内容本身。",
-        "这个页面在 Phase 0 就存在，是为了把信任说明作为产品的一部分，而不是上线前临时补充。",
+        "编辑器会在浏览器里处理 JPG 和 PNG 文件，用于预览、构图和导出。",
+        "统计和广告可以记录页面使用情况，但不应包含用户上传图片的内容本身。",
+        "如果你希望立即清除本地编辑状态，完成下载后可以直接刷新或关闭页面。",
       ],
     },
     termsPage: {
@@ -428,7 +428,7 @@ export const siteMessages: Record<Locale, SiteMessageDictionary> = {
       points: [
         "本工具用于帮助用户裁切和导出照片，不提供官方审批、法律保证或通过承诺。",
         "用户仍需在提交前自行核对最新的政府要求。",
-        "这个路由被纳入骨架，是为了让合规表达从一开始就是产品的一部分，而不是后补。",
+        "导出成功并不代表照片一定满足全部背景、光线或近照要求。",
       ],
     },
     toolPage: {
@@ -445,21 +445,21 @@ export const siteMessages: Record<Locale, SiteMessageDictionary> = {
       rules: [
         "照片只保留在本地浏览器中。",
         "不会声称官方一定通过。",
-        "广告未来只会放在导出区下方，而不是编辑器内部。",
+        "广告只会出现在编辑器外侧，不会遮挡裁切操作。",
       ],
       modules: [
         {
           title: "上传面板",
           description:
-            "后续负责 JPG / PNG 输入、本地解码、校验和 object URL 生命周期管理。",
+            "负责接收 JPG / PNG、执行本地校验，并把图片准备为浏览器内编辑状态。",
         },
         {
           title: "照片舞台",
-          description: "后续承接正方形裁切区、头部辅助框，以及拖拽调整交互。",
+          description: "显示正方形裁切区、头部参考框，以及拖拽调整交互。",
         },
         {
           title: "导出面板",
-          description: "后续在这里接入数字版导出和 4x6 打印模板导出。",
+          description: "完成调整后，可在这里下载数字版 JPG 和 4x6 打印模板。",
         },
       ],
     },

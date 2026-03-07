@@ -2,6 +2,7 @@ import Link from "next/link";
 import { AdSlot } from "@/components/ads/ad-slot";
 import { JsonLd } from "@/components/seo/json-ld";
 import { type ContentPage } from "@/features/content/types";
+import { adSlots } from "@/lib/ads/slots";
 import { getLocalizedPath, type Locale } from "@/lib/i18n/config";
 import { getSiteMessages } from "@/lib/i18n/messages";
 import { buildFaqSchema } from "@/lib/seo/schema";
@@ -105,7 +106,11 @@ export function ContentPageShell({ locale, page }: ContentPageShellProps) {
               </div>
               {index === 1 ? (
                 <div className="mt-6">
-                  <AdSlot locale={locale} label={page.adSlotLabel} />
+                  <AdSlot
+                    locale={locale}
+                    label={page.adSlotLabel}
+                    slotId={adSlots.contentInline}
+                  />
                 </div>
               ) : null}
             </section>
@@ -199,6 +204,12 @@ export function ContentPageShell({ locale, page }: ContentPageShellProps) {
               </p>
             </div>
           </section>
+
+          <AdSlot
+            locale={locale}
+            label={page.adSlotLabel}
+            slotId={adSlots.contentFooter}
+          />
         </div>
       </div>
     </article>

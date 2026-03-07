@@ -1,6 +1,8 @@
 import Link from "next/link";
+import { AdSlot } from "@/components/ads/ad-slot";
 import { JsonLd } from "@/components/seo/json-ld";
 import { getFaqItems } from "@/features/content/faq.config";
+import { adSlots } from "@/lib/ads/slots";
 import { getLocalizedPath, type Locale } from "@/lib/i18n/config";
 import { getSiteMessages } from "@/lib/i18n/messages";
 import { createPageMetadata } from "@/lib/seo/metadata";
@@ -16,7 +18,10 @@ export async function generateMetadata({ params }: FaqPageProps) {
   const { locale } = await params;
 
   return createPageMetadata({
-    title: locale === "zh" ? "常见问题" : "Passport Photo FAQ",
+    title:
+      locale === "zh"
+        ? "护照照片制作常见问题"
+        : "Passport Photo Maker FAQ and Submission Tips",
     description: getSiteMessages(locale).faqPage.description,
     path: "/faq",
     locale,
@@ -60,19 +65,27 @@ export default async function FaqPage({ params }: FaqPageProps) {
       </section>
 
       <section className="space-y-4">
-        {faqItems.map((item) => (
-          <article
-            key={item.question}
-            className="border-line bg-surface rounded-[1.75rem] border p-6"
-          >
-            <p className="text-muted text-xs tracking-[0.22em] uppercase">
-              {item.category}
-            </p>
-            <h2 className="text-foreground mt-3 text-2xl font-semibold">
-              {item.question}
-            </h2>
-            <p className="text-muted mt-3 text-base leading-8">{item.answer}</p>
-          </article>
+        {faqItems.map((item, index) => (
+          <div key={item.question}>
+            <article className="border-line bg-surface rounded-[1.75rem] border p-6">
+              <p className="text-muted text-xs tracking-[0.22em] uppercase">
+                {item.category}
+              </p>
+              <h2 className="text-foreground mt-3 text-2xl font-semibold">
+                {item.question}
+              </h2>
+              <p className="text-muted mt-3 text-base leading-8">{item.answer}</p>
+            </article>
+            {index === 2 ? (
+              <div className="mt-4">
+                <AdSlot
+                  locale={locale}
+                  label={locale === "zh" ? "FAQ 页面广告位" : "FAQ page ad slot"}
+                  slotId={adSlots.faqInline}
+                />
+              </div>
+            ) : null}
+          </div>
         ))}
       </section>
     </div>

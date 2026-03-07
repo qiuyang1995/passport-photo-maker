@@ -15,7 +15,10 @@ export async function generateMetadata({ params }: PrivacyPageProps) {
   const messages = getSiteMessages(locale);
 
   return createPageMetadata({
-    title: locale === "zh" ? "隐私" : "Privacy",
+    title:
+      locale === "zh"
+        ? "隐私说明：照片仅在浏览器本地处理"
+        : "Privacy Policy for Local Passport Photo Processing",
     description: messages.privacyPage.description,
     path: "/privacy",
     locale,
@@ -59,8 +62,8 @@ export default async function PrivacyPage({ params }: PrivacyPageProps) {
         </h2>
         <p className="mt-3 max-w-2xl text-sm leading-7 text-white/76">
           {locale === "zh"
-            ? "隐私承诺只有在产品流程足够清晰时才可信。你可以继续查看工具页和规格说明页，理解整条用户路径。"
-            : "Privacy promises only feel credible when the product flow is clear. Continue to the tool route and requirements page to see the full user journey."}
+            ? "隐私承诺必须和实际流程一致。你可以继续查看工具页和规格说明页，了解上传、调整和导出的完整路径。"
+            : "A privacy promise only works when the workflow matches it. Continue to the tool and requirements page to review the upload, edit, and export flow."}
         </p>
         <div className="mt-5 flex flex-wrap gap-3">
           <Link

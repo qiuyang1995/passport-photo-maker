@@ -51,7 +51,7 @@ export const zhContentPages: Record<string, ContentPage> = {
         heading: "规格页的结尾应该把用户带回工具",
         body: [
           "一个好的规格说明页，不应该停在解释规则，而应该帮助用户形成一套简单清单：方形裁切、脸部居中、检查背景、再去导出。",
-          "Phase 1 先通过更完整的内容和清晰 CTA 做到这一点；后续阶段再考虑加入更强的示意图或提示能力。",
+          "更直接的做法是让页面结尾回到工具页：重新打开编辑器、应用正方形裁切，并在提交前自行复核最终结果。",
         ],
       },
     ],
@@ -177,11 +177,11 @@ export const zhContentPages: Record<string, ContentPage> = {
   },
   "passport-photo-print-template": {
     slug: "passport-photo-print-template",
-    title: "护照照打印模板说明",
-    navLabel: "打印模板",
-    description:
-      "解释 4x6 打印模板为什么这样排版、适合什么场景，以及用户在打印前必须检查什么。",
-    h1: "在导出 UI 完成前，先把 4x6 打印模板这件事讲清楚。",
+      title: "护照照打印模板说明",
+      navLabel: "打印模板",
+      description:
+        "解释 4x6 打印模板为什么这样排版、适合什么场景，以及用户在打印前必须检查什么。",
+    h1: "先理解 4x6 打印模板，再把文件交给打印机或冲印店。",
     eyebrow: "打印模板",
     adSlotLabel: "正文中部广告位预留",
     quickFacts: [
@@ -240,8 +240,8 @@ export const zhContentPages: Record<string, ContentPage> = {
     cta: {
       title: "需要可打印的护照照片模板？",
       description:
-        "完成裁切后，后续导出流程会生成 4x6 打印模板，方便你在家打印或交给冲印店处理。",
-      primaryLabel: "打开工具路由",
+        "完成裁切后，直接使用工具里的导出按钮下载 4x6 打印模板，方便你在家打印或交给冲印店处理。",
+      primaryLabel: "打开工具",
       primaryHref: "/passport-photo-maker",
       secondaryLabel: "对比数字版导出",
       secondaryHref: "/digital-passport-photo-checker",

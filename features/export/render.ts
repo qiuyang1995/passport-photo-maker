@@ -1,3 +1,12 @@
+import {
+  PRINT_CANVAS_HEIGHT,
+  PRINT_CANVAS_WIDTH,
+  PRINT_PHOTO_SIZE,
+  PRINT_TEMPLATE_COLUMNS,
+  PRINT_TEMPLATE_ROWS,
+} from "@/features/export/print/constants";
+import { getCoverScale } from "@/features/editor/utils/transform";
+
 export type RenderSource = {
   image: CanvasImageSource;
   naturalWidth: number;
@@ -23,11 +32,12 @@ export function drawSquarePassportPhoto({
   stageSize: number;
   outputSize: number;
 }) {
-  const baseScale = Math.max(
-    stageSize / source.naturalWidth,
-    stageSize / source.naturalHeight,
-  );
-  const displayScale = baseScale * transform.scale;
+  const displayScale = getCoverScale({
+    stageSize,
+    naturalWidth: source.naturalWidth,
+    naturalHeight: source.naturalHeight,
+    scale: transform.scale,
+  });
   const drawWidth = source.naturalWidth * displayScale;
   const drawHeight = source.naturalHeight * displayScale;
   const ratio = outputSize / stageSize;
@@ -42,21 +52,28 @@ export function drawSquarePassportPhoto({
 }
 
 export function getPrintTemplatePlacements({
-  canvasWidth,
-  canvasHeight,
-  photoSize,
+  canvasWidth = PRINT_CANVAS_WIDTH,
+  canvasHeight = PRINT_CANVAS_HEIGHT,
+  photoSize = PRINT_PHOTO_SIZE,
+  columns = PRINT_TEMPLATE_COLUMNS,
+  rows = PRINT_TEMPLATE_ROWS,
 }: {
-  canvasWidth: number;
-  canvasHeight: number;
-  photoSize: number;
+  canvasWidth?: number;
+  canvasHeight?: number;
+  photoSize?: number;
+  columns?: number;
+  rows?: number;
 }) {
-  const columns = Math.floor(canvasWidth / photoSize);
-  const rows = Math.floor(canvasHeight / photoSize);
   const placements: Array<{ x: number; y: number }> = [];
+  const horizontalGap = (canvasWidth - columns * photoSize) / (columns + 1);
+  const verticalGap = (canvasHeight - rows * photoSize) / (rows + 1);
 
   for (let row = 0; row < rows; row += 1) {
     for (let col = 0; col < columns; col += 1) {
-      placements.push({ x: col * photoSize, y: row * photoSize });
+      placements.push({
+        x: horizontalGap + col * (photoSize + horizontalGap),
+        y: verticalGap + row * (photoSize + verticalGap),
+      });
     }
   }
 

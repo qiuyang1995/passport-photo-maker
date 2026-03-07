@@ -51,7 +51,7 @@ export const enContentPages: Record<string, ContentPage> = {
         heading: "Turn the requirements page into a conversion step",
         body: [
           "A strong requirements page should end with a direct transition back into the editor. The user should leave with a mental checklist: crop square, center the face, review the background, then export.",
-          "In Phase 1, that means better explanatory content and clear CTAs. In later phases, this page can support richer examples or warning states without changing the route structure.",
+          "That means ending with a clear CTA today: return to the editor, apply the square crop, and review the final image before submission.",
         ],
       },
     ],
@@ -192,7 +192,7 @@ export const enContentPages: Record<string, ContentPage> = {
     navLabel: "Print template",
     description:
       "Learn how the 4x6 print template works, why multiple 2x2 photos are placed on one sheet, and what users should watch before printing.",
-    h1: "Make the print-template route explain the 4x6 output before the export UI exists.",
+    h1: "Understand the 4x6 print template before you send it to a printer.",
     eyebrow: "Print",
     adSlotLabel: "Inline print guide ad slot",
     quickFacts: [
@@ -202,7 +202,7 @@ export const enContentPages: Record<string, ContentPage> = {
       { label: "Key warning", value: "Disable auto-fit and scaling" },
     ],
     keyTakeaways: [
-      "The print template route converts a technical output into a reassuring explanation users can trust.",
+      "The print template page turns a technical output into a practical explanation users can trust.",
       "This page should tell users what the 4x6 sheet is for and how not to distort it when printing.",
       "Print-related traffic is high-intent and should always have an immediate path back to the tool.",
     ],
@@ -211,8 +211,8 @@ export const enContentPages: Record<string, ContentPage> = {
         id: "why-4x6",
         heading: "Explain why the sheet uses a 4x6 format",
         body: [
-          "Users do not care about canvas math. They care whether the print output is practical, economical, and easy to use at home or through a print shop. The 4x6 route should therefore explain the format in terms of convenience and consistency.",
-          "That story matters because the product does not want the editor UI overloaded with operational printing instructions. The content route absorbs that complexity instead.",
+          "Users do not care about canvas math. They care whether the print output is practical, economical, and easy to use at home or through a print shop. This guide should therefore explain the format in terms of convenience and consistency.",
+          "That story matters because the product does not want the editor overloaded with operational printing instructions. This page absorbs that complexity instead.",
         ],
       },
       {
@@ -220,7 +220,7 @@ export const enContentPages: Record<string, ContentPage> = {
         heading: "Show that the same crop is reused consistently",
         body: [
           "The print template export is valuable because it reuses one carefully adjusted crop across multiple tiles on the same sheet. That keeps every print copy consistent and avoids asking the user to rebuild the same crop repeatedly.",
-          "This route should make that benefit explicit. Otherwise the print export can feel arbitrary instead of intentional.",
+          "This page should make that benefit explicit. Otherwise the print export can feel arbitrary instead of intentional.",
         ],
       },
       {
@@ -253,8 +253,8 @@ export const enContentPages: Record<string, ContentPage> = {
     cta: {
       title: "Need a printable passport photo sheet?",
       description:
-        "Use the future export flow to generate a 4x6 print-ready layout after you finish adjusting the square crop in the tool.",
-      primaryLabel: "Open the tool route",
+        "Use the export buttons in the tool after you finish adjusting the square crop to download a 4x6 print-ready layout.",
+      primaryLabel: "Open the tool",
       primaryHref: "/passport-photo-maker",
       secondaryLabel: "Compare with digital output",
       secondaryHref: "/digital-passport-photo-checker",
@@ -289,16 +289,16 @@ export const enContentPages: Record<string, ContentPage> = {
       },
     ],
     keyTakeaways: [
-      "The digital route should create confidence without overpromising automation.",
+      "The digital guide should create confidence without overpromising automation.",
       "Users close to conversion need clarity about what the export helps with and what they must still review manually.",
-      "This page is where the product sets the right trust boundary for future checker features.",
+        "This page is where the product sets the right trust boundary for digital guidance and submission prep.",
     ],
     sections: [
       {
         id: "what-this-checker-is",
         heading: "Define scope before discussing features",
         body: [
-          "The most important job of this page is to avoid false expectations. A digital checker route can explain what to review, where the product helps, and what kinds of mistakes commonly cause rejection, but it should not position itself as an official approval system.",
+          "The most important job of this page is to avoid false expectations. A digital checker guide can explain what to review, where the product helps, and what kinds of mistakes commonly cause rejection, but it should not position itself as an official approval system.",
           "That boundary protects both compliance and user trust. Overclaiming creates short-term conversion risk and long-term credibility damage.",
         ],
       },
@@ -306,8 +306,8 @@ export const enContentPages: Record<string, ContentPage> = {
         id: "what-users-should-review",
         heading: "Tell users exactly what still needs manual review",
         body: [
-          "Even with a clean export, users still need to look at face size, background consistency, expression, shadows, and image sharpness. A good digital route should turn those into a simple checklist instead of vague warnings.",
-          "The product works best when this content page and the tool route feel like two parts of one journey: understand the rules here, then act in the editor.",
+          "Even with a clean export, users still need to look at face size, background consistency, expression, shadows, and image sharpness. A good digital guide should turn those into a simple checklist instead of vague warnings.",
+          "The product works best when this content page and the tool feel like two parts of one journey: understand the rules here, then act in the editor.",
         ],
       },
       {
@@ -315,7 +315,7 @@ export const enContentPages: Record<string, ContentPage> = {
         heading: "Explain why the product avoids guarantees",
         body: [
           "Guarantee language sounds attractive, but it is the wrong promise for a local browser tool that does not perform deep image validation. The right promise is usefulness, privacy, and clarity.",
-          "That is why the route should say what the user gains: a practical crop, a clear export path, and guidance on what to double-check before submission.",
+          "That is why the page should say what the user gains: a practical crop, a clear export path, and guidance on what to double-check before submission.",
         ],
       },
     ],
@@ -331,7 +331,7 @@ export const enContentPages: Record<string, ContentPage> = {
           "Review the background, shadows, framing, sharpness, expression, and whether the face appears properly centered in the final crop.",
       },
       {
-        question: "Why keep this route separate from the tool page?",
+        question: "Why keep this guide separate from the tool page?",
         answer:
           "Because users searching for checker or digital rules often need explanation before action. The tool page should stay focused on the editing workflow itself.",
       },

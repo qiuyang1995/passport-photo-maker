@@ -2,20 +2,22 @@ import { describe, expect, it, vi } from "vitest";
 import { drawSquarePassportPhoto, getPrintTemplatePlacements } from "@/features/export/render";
 
 describe("getPrintTemplatePlacements", () => {
-  it("returns 2x3 positions for a 4x6 canvas with 2x2 photos", () => {
+  it("returns 2x3 positions with fixed margins and gaps", () => {
     const placements = getPrintTemplatePlacements({
-      canvasWidth: 1200,
-      canvasHeight: 1800,
+      canvasWidth: 1800,
+      canvasHeight: 2700,
       photoSize: 600,
+      columns: 2,
+      rows: 3,
     });
 
     expect(placements).toEqual([
-      { x: 0, y: 0 },
-      { x: 600, y: 0 },
-      { x: 0, y: 600 },
-      { x: 600, y: 600 },
-      { x: 0, y: 1200 },
-      { x: 600, y: 1200 },
+      { x: 200, y: 225 },
+      { x: 1000, y: 225 },
+      { x: 200, y: 1050 },
+      { x: 1000, y: 1050 },
+      { x: 200, y: 1875 },
+      { x: 1000, y: 1875 },
     ]);
   });
 });
